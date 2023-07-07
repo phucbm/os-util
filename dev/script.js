@@ -6,7 +6,8 @@ import 'honcau';
 import './style.scss';
 
 // source script
-import '@/_index';
+import {getOptionsFromAttribute} from "@/get-options-from-attribute";
+
 
 // import package info
 const packageInfo = require('../package.json');
@@ -23,4 +24,4 @@ document.querySelector('[data-description]').innerHTML = packageInfo.description
 /**
  * Lib usage
  */
-Wellii.init();
+getOptionsFromAttribute()
