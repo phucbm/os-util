@@ -24,4 +24,9 @@ document.querySelector('[data-description]').innerHTML = packageInfo.description
 /**
  * Lib usage
  */
-getOptionsFromAttribute()
+const options = getOptionsFromAttribute({
+    target: document.querySelector('section'),
+    attributeName: 'data-json',
+    numericValues: ['testNum']
+})
+console.log(options)
