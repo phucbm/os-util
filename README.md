@@ -2,6 +2,10 @@
 
 ### Get options from attribute
 
+```js
+import {getOptionsFromAttribute} from "@phucbm/os-utility";
+```
+
 #### 1. Test cases for boolean and numeric values
 
 ```html
