@@ -1,8 +1,7 @@
 {
   "name": "@phucbm/os-util",
-  "outputFilename": "os-util",
   "prettyName": "OS Utility",
-  "version": "0.0.1",
+  "version": "0.0.2-2",
   "description": "Utility functions for open-source projects.",
   "homepage": "https://github.com/phucbm/os-util",
   "repository": {
@@ -19,12 +18,13 @@
     "es6",
     "open-source"
   ],
-  "main": "./dist/os-util.module.js",
+  "main": "index.js",
+  "files": [
+    "src/*"
+  ],
   "license": "MIT",
   "scripts": {
-    "dev": "webpack serve --config config/webpack.dev.js",
-    "build": "cross-env ENTRY=dev webpack --config config/webpack.build.js",
-    "prod": "cross-env TARGET=module webpack --config config/webpack.prod.js"
+    "dev": "webpack serve --config config/webpack.dev.js"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
