@@ -3,7 +3,7 @@
 ### Get options from attribute
 
 ```js
-import {getOptionsFromAttribute} from "@phucbm/os-utility";
+import {getOptionsFromAttribute} from "@phucbm/os-util";
 ```
 
 #### 1. Test cases for boolean and numeric values
