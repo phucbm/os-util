@@ -1,4 +1,4 @@
-# OS Utility
+# OS Util
 
 ### Get options from attribute
 
