@@ -1,11 +1,13 @@
 import {isJsonString} from "./is-json-string";
 
 /**
- * Get options from attribute
+ * Get options from attribute v0.0.1
  * @param target
  * @param attributeName
  * @param defaultOptions
  * @param numericValues
+ * @param onIsString
+ * @param dev
  * @returns {*}
  */
 export function getOptionsFromAttribute(
@@ -13,12 +15,19 @@ export function getOptionsFromAttribute(
         target,
         attributeName = '',
         defaultOptions = {},
-        numericValues = [] // convert these props to float
+        numericValues = [], // convert these props to float
+        onIsString = undefined,
+        dev = false,
     }
 ){
     /**
      * Validate
      */
+    if(!target){
+        if(dev) console.warn('Target not found!', target);
+        return defaultOptions;
+    }
+
     // no attribute found
     if(!target.hasAttribute(attributeName)){
         console.warn('Attribute not found from target', attributeName);
@@ -30,13 +39,20 @@ export function getOptionsFromAttribute(
 
     // no value found
     if(!dataAttribute.length){
-        return;
+        // return default options
+        return defaultOptions;
     }
 
     // not a JSON string
     if(!isJsonString(dataAttribute)){
-        console.warn('Not a JSON string', dataAttribute);
-        return;
+        if(typeof onIsString === 'function'){
+            // exe callback if available
+            onIsString(dataAttribute);
+        }else{
+            // throw warning if callback is not found
+            console.warn('Not a JSON string', dataAttribute);
+        }
+        return defaultOptions;
     }
 
     /**

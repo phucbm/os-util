@@ -1,13 +1,13 @@
 {
-  "name": "os-utility",
-  "outputFilename": "os-utility",
+  "name": "@phucbm/os-util",
+  "outputFilename": "os-util",
   "prettyName": "OS Utility",
   "version": "0.0.1",
   "description": "Utility functions for open-source projects.",
-  "homepage": "https://github.com/phucbm/os-utility",
+  "homepage": "https://github.com/phucbm/os-util",
   "repository": {
     "type": "git",
-    "url": "git@github.com:phucbm/os-utility"
+    "url": "git@github.com:phucbm/os-util"
   },
   "author": {
     "name": "phucbm",
@@ -19,7 +19,7 @@
     "es6",
     "open-source"
   ],
-  "main": "./dist/os-utility.module.js",
+  "main": "./dist/os-util.module.js",
   "license": "MIT",
   "scripts": {
     "dev": "webpack serve --config config/webpack.dev.js",
