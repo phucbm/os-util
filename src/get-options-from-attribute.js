@@ -30,8 +30,8 @@ export function getOptionsFromAttribute(
 
     // no attribute found
     if(!target.hasAttribute(attributeName)){
-        console.warn('Attribute not found from target', attributeName);
-        return;
+        if(dev) console.warn('Attribute not found from target', attributeName);
+        return defaultOptions;
     }
 
     // options from attribute
