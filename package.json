@@ -1,7 +1,7 @@
 {
   "name": "@phucbm/os-util",
   "prettyName": "OS Utility",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Utility functions for open-source projects.",
   "homepage": "https://github.com/phucbm/os-util",
   "repository": {

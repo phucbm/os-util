@@ -1,5 +1,16 @@
 # OS Util
 
+https://www.npmjs.com/package/@phucbm/os-util
+
+## Install
+
+```shell
+# Install
+npm i @phucbm/os-util
+```
+
+## Features
+
 ### Get options from attribute
 
 ```js
@@ -60,11 +71,15 @@ console.log(options); // => {}
 
 ### Events Manager
 
+```js
+import {EventsManager} from "@phucbm/os-util";
+```
+
 In your plugin constructor
 
 ```js
 // init events manager
-this.events = new EventManager(this, {
+this.events = new EventsManager(this, {
     names: ['onInit'] // register event names
 });
 
@@ -108,8 +123,9 @@ instance.on('init', data => {
 
 ```shell
 # Publish package
-# 1. Update version in package.json
-# 2. Run publish
+# 1. Export the new function in index.js
+# 2. Update version in package.json
+# 3. Run publish
 npm publish
 
 # Dev
