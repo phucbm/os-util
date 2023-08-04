@@ -1,5 +1,5 @@
 /**
- * Events Manager v0.0.1
+ * Events Manager v0.0.2
  * An util class to manage event with these features:
  * 1. Able to assign event via context.options or context.config
  * 2. Able to assign event via method on()
@@ -44,8 +44,10 @@ export class EventsManager{
 
         // fire event from option
         const contextOptions = this.context.config ? this.context.config : this.context.options;
-        const eventFromOption = contextOptions[eventName];
-        if(typeof eventFromOption === 'function') eventFromOption(response);
+        if(contextOptions){
+            const eventFromOption = contextOptions[eventName];
+            if(typeof eventFromOption === 'function') eventFromOption(response);
+        }
 
         // fire event from late-assign list
         const eventFromList = this.eventsList[eventName];
