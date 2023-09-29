@@ -1,7 +1,7 @@
 import {isJsonString} from "./is-json-string";
 
 /**
- * Get options from attribute v0.0.1
+ * Get options from attribute v0.0.2
  * @param target
  * @param attributeName
  * @param defaultOptions
@@ -24,7 +24,7 @@ export function getOptionsFromAttribute(
      * Validate
      */
     if(!target){
-        if(dev) console.warn('Target not found!', target);
+        console.warn('Requires target to get options from attribute!', target);
         return defaultOptions;
     }
 
