@@ -1,5 +1,13 @@
 # OS Util
 
+[![npm version](https://badgen.net/npm/v/@phucbm/os-util?icon=npm)](https://www.npmjs.com/package/@phucbm/os-util)
+[![npm downloads](https://badgen.net/npm/dm/@phucbm/os-util?icon=npm)](https://www.npmjs.com/package/@phucbm/os-util)
+[![npm dependents](https://badgen.net/npm/dependents/@phucbm/os-util?icon=npm)](https://www.npmjs.com/package/@phucbm/os-util)
+[![github stars](https://badgen.net/github/stars/phucbm/os-util?icon=github)](https://github.com/phucbm/os-util/)
+[![jsdelivr npm rank](https://badgen.net/jsdelivr/rank/npm/@phucbm/os-util?icon=npm)](https://www.npmjs.com/package/@phucbm/os-util)
+[![github license](https://badgen.net/github/license/phucbm/os-util?icon=github)](https://github.com/phucbm/os-util/blob/main/LICENSE)
+[![Made in Vietnam](https://raw.githubusercontent.com/webuild-community/badge/master/svg/made.svg)](https://webuild.community)
+
 https://www.npmjs.com/package/@phucbm/os-util
 
 ## Install
